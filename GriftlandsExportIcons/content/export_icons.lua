@@ -95,13 +95,6 @@ function ExportIconsInternal(arg)
     end
 end
 
-function FindGraftStrings()
-    for id, def in pairs(Content.GetAllGrafts()) do
-        local icon = def.img_path
-        print(icon)
-    end
-end
-
 function ExportIcons(arg)
     TheGame.scheduler:DoCoroutine( 0.5, ExportIconsInternal, arg )
 end
