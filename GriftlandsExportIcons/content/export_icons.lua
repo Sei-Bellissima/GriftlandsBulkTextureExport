@@ -5,41 +5,9 @@ function ExportIconsInternal(arg)
     local rem = ""
     local MissingTextures = {
         "icons/mutators/daily_boss_health.tex",
-        "icons/items/graft_tough_constitution.tex",
-        "icons/items/graft_researcher.tex",
-        "icons/items/graft_resolute3.tex",
-        "icons/items/graft_perfect_shape.tex",
-        "icons/items/graft_benefits.tex",
-        "icons/items/graft_gourmet.tex",
-        "icons/items/graft_survivalist.tex",
-        "icons/items/graft_good_health.tex",
-        "icons/items/graft_basic_training.tex",
-        "icons/items/graft_resolute.tex",
-        "icons/items/graft_handy.tex",
-        "icons/items/graft_stamina2.tex",
-        "icons/items/graft_good_health2.tex",
-        "icons/items/graft_animal_bond.tex",
-        "icons/items/graft_stamina.tex",
-        "icons/items/graft_expanded_assortment.tex",
-        "icons/items/graft_socializer.tex",
-        "icons/items/graft_fast_learner.tex",
-        "icons/items/graft_good_health3.tex",
-        "icons/items/graft_charming.tex",
-        "icons/items/graft_benefits2.tex",
-        "icons/items/graft_animal_handling.tex",
-        "icons/items/graft_alert.tex",
-        "icons/items/graft_partner_in_crime.tex",
-        "icons/items/graft_premium_quality.tex",
-        "icons/items/graft_terror.tex",
-        "icons/items/graft_perseverance.tex",
-        "icons/items/graft_resolute2.tex",
-        "icons/items/graft_benefits3.tex",
-        "icons/items/graft_unencumbered.tex",
-        "icons/items/graft_ancient_warrior.tex",
-        "icons/items/graft_innate_connection.tex",
-        "icons/items/graft_forgiveness.tex",
-        "battle/spit.tex",
-        "battle/bite.tex"
+        "icons/perks/perk_tough_constitution.tex",
+        "battle/bite.tex",
+        "battle/spit.tex"
     }
     if arg == "negotiation" then
         ContentFunction = Content.GetAllNegotiationCards()
@@ -59,10 +27,12 @@ function ExportIconsInternal(arg)
             if arg == "grafts" then
                 icon = def.img_path
                 if icon ~= nil then
-                    if string.match(icon, "items") then
+                    if string.find(icon, "items") then
                         rem = "icons/items/"
-                    else
+                    elseif string.find(icon, "mutators") then
                         rem = "icons/mutators/"
+                    else
+                        rem = "icons/perks/"
                     end
                 end
             end
