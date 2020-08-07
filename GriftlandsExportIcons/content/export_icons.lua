@@ -5,7 +5,7 @@ function ExportIconsInternal(arg)
     local rem = ""
     local MissingTextures = {
         "icons/mutators/daily_boss_health.tex",
-        "icons/perks/perk_tough_constitution.tex",
+        "icons/items/graft_story_mode_graft.tex",
         "battle/bite.tex",
         "battle/spit.tex"
     }
