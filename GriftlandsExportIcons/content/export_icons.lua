@@ -4,21 +4,16 @@ function ExportIconsInternal(arg)
     local ContentFunction = ""
     local rem = ""
     local MissingTextures = {
-        "battle/callus.tex",
-        "battle/conditions/callus.tex",
-        "battle/cavalcade.tex",
-        "battle/conditions/cavalcade.tex",
-        "battle/fortification_potion.tex",
-        "battle/rubble.tex",
-        "battle/tough_and_angry.tex",
-        "battle/tracer.tex",
+        "battle/conditions/next_turn_defense.tex",
+        "battle/conditions/next_turn_defense.tex",
         "battle/conditions/tracer.tex",
         "battle/conditions/stored_defense.tex",
-        "icons/mutators/daily_boss_health.tex",
-        "icons/items/graft_story_mode_graft.tex",
+        "battle/mutators/daily_boss_health.tex",
+        "battle/items/graft_story_mode_graft.tex",
+        "battle/conditions/true_believer.tex",
         "battle/bite.tex",
         "battle/spit.tex",
-        "battle/conditions/snipers_poise.tex",
+        "battle/half_sandwich.tex",
         "battle/smith_day_1_boss_fight_heckle.tex",
         "battle/smith_day_1_boss_fight_encourage.tex"
     }
