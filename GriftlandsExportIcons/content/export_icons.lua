@@ -5,7 +5,6 @@ function ExportIconsInternal(arg)
     local rem = ""
     local MissingTextures = {
         "battle/conditions/next_turn_defense.tex",
-        "battle/conditions/next_turn_defense.tex",
         "battle/conditions/tracer.tex",
         "battle/conditions/stored_defense.tex",
         "battle/mutators/daily_boss_health.tex",
