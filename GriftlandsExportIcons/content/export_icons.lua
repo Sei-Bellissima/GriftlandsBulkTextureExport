@@ -4,17 +4,10 @@ function ExportIconsInternal(arg)
     local ContentFunction = ""
     local rem = ""
     local MissingTextures = {
-        "battle/conditions/next_turn_defense.tex",
-        "battle/conditions/tracer.tex",
-        "battle/conditions/stored_defense.tex",
         "battle/mutators/daily_boss_health.tex",
         "battle/items/graft_story_mode_graft.tex",
-        "battle/conditions/true_believer.tex",
         "battle/bite.tex",
         "battle/spit.tex",
-        "battle/half_sandwich.tex",
-        "battle/smith_day_1_boss_fight_heckle.tex",
-        "battle/smith_day_1_boss_fight_encourage.tex"
     }
     if arg == "negotiation" then
         ContentFunction = Content.GetAllNegotiationCards()
